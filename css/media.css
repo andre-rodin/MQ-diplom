@@ -1,0 +1,992 @@
+/*-------- медиа запросы от 768 до 1200 ----------- */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .header {
+    max-width: 1200px;
+    width: 100%; 
+    height: auto; 
+    background-color: #6d6c69;
+  }
+  
+  .logo {
+    max-width: 1000px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 54px; 
+  }
+  
+  .header_logo {
+    max-width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header_nav {
+    display: none;
+    }
+  
+/*-------- бургер меню --------*/
+
+  .burger_wrapper {
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
+    margin: -30% 10px auto auto;
+    position: relative; 
+    z-index: 15;
+  }
+  
+  .burger_label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+  }
+  
+  .burger-line {
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background-color: white;
+    transition: 0.1s all; 
+  }
+   
+  .second, .third {
+    top: 18px;
+  } 
+  
+  .fourth {
+    top: 28px;
+  } 
+  
+  .burger_main-menu {
+    width: 100%;
+    max-height: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    font-size: 0;
+    overflow: hidden;
+    transition: 2.0s all; 
+  }
+  
+  .burger_items {
+    display: block; 
+    width: 100%; 
+    padding: 10px; 
+    color: white; 
+    text-decoration: none; 
+    cursor: pointer;
+  } 
+  
+  .burger_items:hover {
+    color: #5369e8;
+  }
+  
+  #check-menu {
+    display: none;
+  }
+  
+  #check-menu:checked ~ .burger_main-menu {
+    max-height: 500px;
+    font-size: 0.625rem;
+  }
+  
+  #check-menu:checked ~ .first {
+    display: none; 
+  }
+  
+  #check-menu:checked ~ .second {
+    transform: rotate(45deg);
+  }
+  
+  #check-menu:checked ~ .third {
+    transform: rotate(-45deg);
+  }
+  
+  #check-menu:checked ~ .fourth {
+    display: none; 
+  }
+  
+  .banner_text {
+    max-width: 530px;
+    height: auto;
+    font-size: 2rem;
+    line-height: 2;
+    margin-left: 22%; 
+    margin-right: auto;
+    margin-top: -7%;
+  } 
+  
+/*------ сейчас в тренде ----------- */
+
+  .card_container {
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; 
+  } 
+  
+  .card_trend {
+    max-width: 385px; 
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;  
+  }
+  
+/* ------- контентная часть --------*/
+
+  .content {
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+    
+  .main {
+    width: 60%; 
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+    
+  .main_section {
+    width: 100%;
+    height: auto;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 65px;
+  }  
+  
+  .main_img {
+    width: 80%; 
+    height: auto;
+    margin-left: 34px;
+    margin-right: 17px;
+  }
+  
+  .article_main {
+    width: 80%;
+    height: auto;
+    display: flex;
+    display: block;
+    font-family: inherit;
+    margin-top: 16px;
+    margin-left: 34px;
+    margin-right: 17px;
+  }
+  .article_main::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 23px auto 0px;
+    background-color: rgb(232, 240, 243);;
+  }
+  
+/* ------ боковая часть ---------- */
+
+  .aside {
+    width: 40%; 
+    height: auto;
+    display: block; 
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .aside_section {
+    width: 270px; 
+    height: auto;
+    display: flex;
+    margin-top: 20px; 
+    margin-left: 17px;
+  }
+  
+  .news_title {
+    display: block;
+    font-size: 1rem;
+    margin-top: 65px;
+    margin-left: 100px; 
+    text-transform: uppercase;
+  }
+  .news_title::after {
+    content: "";
+    display: block; 
+    width: 115px;
+    height: 3px;
+    margin: 14px auto 29px 25px;
+    background-color:  #9976149a;
+  }
+  
+/*--------- форма поиска ---------- */
+
+  .form {
+    width: 270px; 
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 60px;
+    margin-left: 17px; 
+  }
+  
+  .form_btn {
+    width: 270px;
+    height: auto;
+    display: block;
+    margin-left: 17px; 
+    padding: 0;
+  }
+  
+/*----------- теги ----------*/
+
+  .meta {
+    width: 80px;
+    height: auto;
+    display: block; 
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    padding-left: 130px; 
+    margin-top: 60px;
+    margin-left: 17px;
+  }
+  .meta:after {
+    content: "";
+    display: block; 
+    width: 65px;
+    height: 2px;
+    background-color:  #9976149a;
+    margin: 15px 98px 25px -10px;
+  }
+  
+  .meta_list {
+    width: 270px;
+    height: auto;
+    display: flex; 
+    flex-wrap: wrap;
+    margin-left: 17px;
+    padding: 0;
+  }
+  
+/*------------ темы ---------- */
+
+  .topics {
+    width: 80px;
+    height: auto;
+    display: block;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    padding-left: 100px; 
+    margin-top: 50px;
+    margin-left: 17px;
+  }
+  .topics::after {
+    content: "";
+    display: block; 
+    width: 65px;
+    height: 2px;
+    background-color:  #9976149a;
+    margin: 15px 100px 25px -8px; 
+  }
+  
+  .topics_list {
+    width: 270px;
+    display: block;
+    margin-left: 17px;
+    padding: 0;
+  }
+  
+/*--------- подвал сайта ---------*/
+
+  .footer {
+    width: 92%;
+    height: auto;
+    background: hsl(0, 0%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 340px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  
+  .copy {
+    text-align: center;
+    font-family: inherit;
+    font-size: 0.5rem;
+    font-weight: normal;
+    margin-left: auto; 
+    margin-left: auto; 
+    margin-bottom: 39px;
+  }
+/* ------- попап ----------- */
+
+.popup {
+  width: 100%;
+  height: 100vw;
+  margin: 0;
+  background-color: #000;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center; 
+}
+
+/*---------- крестик -----------*/
+
+.popup__close {
+  width: 50px;
+  height: 50px;
+  position: fixed;  
+  top: 5px;
+  left: 65.5%;
+  right: auto;
+  color: white; 
+  font-size: 25px;
+  cursor: pointer; 
+ } 
+}
+  
+/*------------ мобильная версия ----------- */
+  
+  @media (min-width: 360px) and (max-width: 767px) {
+  .header {
+    max-width: 767px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  
+  .logo {
+    max-width: 400px;
+    height: auto;
+    padding: 0;
+    margin-top: 9px;
+    margin-left: 35%;
+    margin-right: auto;
+  }  
+  
+  .header_logo {
+    max-width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header_nav {
+    display: none;
+  }
+  
+/* --------- бургер меню ------------*/
+
+  .burger_wrapper {
+    width: 50px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
+    position: relative; 
+    z-index: 15;
+    margin: -32% 10px auto auto;
+  }
+    
+  .burger_label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+    
+  .burger-line {
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    transition: 0.1s all; 
+    background-color: white; 
+  }
+     
+  .second, .third {
+      top: 18px;
+  } 
+    
+  .fourth {
+    top: 28px;
+  } 
+    
+  .burger_main-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 2.0s all; 
+  }
+    
+  .burger_items {
+    display: block; 
+    width: 100%; 
+    padding: 4px; 
+    color: white; 
+    text-decoration: none; 
+    cursor: pointer;
+  } 
+    
+  .burger_items:hover {
+    color: #5369e8;
+  }
+    
+  #check-menu {
+    display: none;
+  }
+    
+  #check-menu:checked ~ .burger_main-menu {
+    max-height: 500px;
+    font-size: 0.625rem;
+  }
+    
+  #check-menu:checked ~ .first {
+    display: none; 
+  }
+    
+  #check-menu:checked ~ .second {
+    transform: rotate(45deg);
+  }
+    
+  #check-menu:checked ~ .third {
+    transform: rotate(-45deg);
+  }
+  
+  #check-menu:checked ~ .fourth {
+    display: none; 
+  }
+    
+  .banner_text {
+    max-width: 350px;
+    height: auto;
+    font-size: 1.375rem;
+    line-height: 1.5; 
+    margin-top: -95px; 
+    margin-left: 11%;  
+    margin-right: auto;
+  }  
+  
+/* ---------- сейчас в тренде -----------*/
+
+  .card_container {
+    max-width: 767px;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .card_trend {
+    max-width: 767px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    outline: 3px solid white;
+  }
+  
+/* ----------- контентная часть -------- */
+
+  .content {
+    max-width: 767px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .main {
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+  
+  .main_section {
+    width: 100%;
+    height: auto;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-left: 0;
+    margin-top: 65px;
+    }  
+  
+  .main_img {
+    width: 100%; 
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px; 
+   } 
+  
+  .article_main {
+    width: 100%;
+    height: auto;
+    font-family: inherit;
+    margin-top: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    display: block;
+   }
+  .article_main::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 23px auto 0px;
+    background-color: rgb(232, 240, 243);;
+  }
+  
+/*--------- боковая часть --------*/
+
+  .aside {
+    width: 100%; 
+    height: auto;
+    display: block; 
+    margin-top: 0;
+    margin-left: 0;
+  }
+         
+  .news_title {
+    display: block;
+    margin-top: 65px;
+    margin-left: 38%; 
+    font-size: 1rem;
+    text-transform: uppercase;
+    }
+  
+  .news_title::after {
+    content: "";
+    display: block; 
+    width: 115px;
+    height: 3px;
+    margin: 14px auto 29px 25px;
+    background-color:  #9976149a;
+    }
+  
+  .aside_section {
+    width: 270px;  
+    height: auto;
+    display: flex;
+    margin-top: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+              
+/*------------- фома поиска -------*/
+
+  .form {
+    width: 270px; 
+    height: auto;
+    margin-top: 60px;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  
+  .form_btn {
+    width: 270px;
+    height: auto;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 0;
+  }
+  
+/*------------ теги ------------- */
+
+  .meta {
+    width: 100px;
+    height: auto;
+    display: block; 
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px 0 70px; 
+  }
+  .meta:after {
+    content: "";
+    display: block; 
+    width: 65px;
+    height: 2px;
+    background-color:  #9976149a;
+  }
+  
+  .meta_list {
+    width: 270px;
+    height: auto;
+    display: flex; 
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  
+  /*----------------- темы -------------- */
+
+  .topics {
+    width: 100px;
+    height: auto;
+    display: block;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    padding-left: 100px; 
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px 0 70px; 
+  }
+  .topics::after {
+    content: "";
+    display: block; 
+    width: 65px;
+    height: 2px;
+    background-color:  #9976149a;
+  }
+  
+  .topics_list {
+    width: 270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  
+   /*------------- наши изделия ------------- */
+
+  .container_shop {
+    max-width: 767px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -290px;
+  }
+  
+  .card_shop {
+    max-width: 767px;
+    height: auto;
+    margin-top: 300px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative; 
+  }
+  
+  .card_shop-end {
+    max-width: 767px; 
+    height: auto;
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative; 
+  }
+  
+  /* --------------- подвал сайта -------------- */
+
+  .footer {
+    width: 88%;
+    height: auto;
+    background: hsl(0, 0%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .copy {
+    text-align: center;
+    font-family: inherit;
+    font-size: 0.5rem;
+    font-weight: normal;
+    margin-top: 54px; 
+    margin-bottom: 45px;
+  }
+
+  /* ------- попап ------------------ */
+
+.popup {
+  width: 100%;
+  height: 100vw;
+  margin: 0;
+  background-color: #000;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center; 
+}
+
+/*--------- крестик-------- */
+
+.popup__close {
+  width: 50px;
+  height: 50px;
+  position: fixed;  
+  top: 5px;
+  /* right: 35.45%;   */
+  left: 74.2%;
+  right: auto;
+  color: white; 
+  font-size: 25px;
+  cursor: pointer; 
+ } 
+}
+  
+  /*-------------------------- ПРОМЕЖУТОЧНЫЕ МЕДИА ------------------------------ */
+  
+  @media (min-width: 1101px) and (max-width:1200px) {
+    .container_shop {
+      max-width: 768px;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start; 
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .card_shop {
+      max-width: 384px;
+      height: auto;
+      margin-left: 33px;
+      margin-right: 33px;
+    }
+  
+    .card_shop-end {
+      max-width: 384px;
+      height: auto;
+      margin-top: 300px;
+      margin-left: 33px;
+      margin-right: 33px;
+      position: relative; 
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1100px) {
+  .product_shop {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-top: 65px;
+    margin-left: auto;  
+    margin-right: auto; 
+  }
+  .product_shop::after {
+    content: "";
+    display: block; 
+    width: 65px;
+    height: 3px;
+    background-color:  #9976149a;
+    margin: 14px auto 28px auto; 
+  }
+  
+  .container_shop {
+    max-width: 768px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start; 
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+  .card_shop {
+    max-width: 384px;
+    height: auto;
+    margin-left: 33px;
+    margin-right: 33px;
+    }
+  
+  .card_shop-end {
+    max-width: 384px;
+    height: auto;
+    margin-top: 300px;
+    margin-left: 33px;
+    margin-right: 33px;
+    position: relative; 
+    }
+    
+   /* крестик */
+
+.popup__close {
+   top: 4px; 
+   left: 67%; 
+  right: auto;
+} 
+}
+
+ @media(min-width: 481px) and (max-width: 765px) {
+/*--------- попап -----------  */
+.popup {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+/*---------- крестик ----------- */
+
+.popup__close {
+   top: 4px; 
+   left: 74%; 
+  right: auto;
+} 
+}
+    
+  @media (min-width: 360px) and (max-width: 480px) {
+  .container_shop {
+    max-width: 480px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: -280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .card_shop {
+    max-width: 360px; 
+    height: auto;
+    padding: 0;
+    margin-top: 300px; 
+    margin-left: auto;
+    margin-right: auto; 
+    position: relative; 
+  }
+  
+  .card_shop-end {
+    max-width: 360px;
+    height: auto;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    }
+
+/*--------- крестик -------*/
+
+.popup__close {
+   top: 4px; 
+   left: 84%; 
+  right: auto;
+} 
+}
+  
+  /* ------------------ медиа ориентация -------------------------------- */
+
+  @media screen and (min-width: 641px) and (orientation: portrait) and (max-width:1200px) {
+    .card_container {
+      max-width: 1200px;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap; 
+      margin: 0;
+    }
+  
+    .card_trend {
+      max-width: 450px; 
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative; 
+      border: 3px solid white;
+    }
+    } 
+    
+  @media screen and (min-width: 641px) and (orientation: landscape) and (max-width:1200px) {
+    .card_container {
+      max-width: 1200px;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap; 
+      margin: 0;
+    }
+  
+  .card_trend {
+      max-width: 390px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative; 
+      border: 3px solid white;
+    }
+  }
+  
+   @media screen and (max-width: 640px) and (orientation: portrait) {
+    .card_container {
+      max-width: 640px;
+      height: auto;
+      display: flex;
+      flex-direction: column; 
+      margin: 0;
+    }
+  
+    .card_trend {
+      max-width: 400px; 
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative; 
+      border: 3px solid white;
+    }
+    } 
+    
+  @media screen and (max-width: 640px) and (orientation: landscape) {
+    .card_container {
+      max-width: 640px;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap; 
+      margin: 0;
+    }
+
+    .card_trend {
+      max-width: 320px; 
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative; 
+      border: 3px solid white;
+    }
+    } 
+  
+  
